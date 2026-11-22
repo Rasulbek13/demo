@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QADAM LAB — Darajangni bil. Yo‘lingni qur. Qadamingni kuzat.</title>
+    <meta
+      name="description"
+      content="QADAM LAB — O‘zbekistondagi ingliz tili va IELTS ta’limi uchun zamonaviy EdTech portfolio demo loyihasi. Darajangni bil. Yo‘lingni qur. Qadamingni kuzat."
+    />
+    <meta property="og:title" content="QADAM LAB — Darajangni bil. Yo‘lingni qur. Qadamingni kuzat." />
+    <meta
+      property="og:description"
+      content="QADAM LAB — EdTech portfolio demo for English and IELTS learning in Uzbekistan."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="QADAM LAB" />
+    <meta property="og:locale" content="uz_UZ" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:image" content="/og-qadam-lab.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="QADAM LAB — Darajangni bil. Yo‘lingni qur. Qadamingni kuzat." />
+    <meta
+      name="twitter:description"
+      content="QADAM LAB — EdTech portfolio demo for English and IELTS learning in Uzbekistan."
+    />
+    <meta name="twitter:image" content="/og-qadam-lab.jpg" />
+    <meta name="theme-color" content="#0B1530" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "QADAM LAB",
+        "description": "QADAM LAB is a fictional EdTech portfolio demo project for English and IELTS learning in Uzbekistan.",
+        "inLanguage": ["uz", "ru", "en"],
+        "sameAs": [
+          "https://www.instagram.com/qadamlab_edu/",
+          "https://t.me/QadamLab_edu"
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('qadamlab_theme');
+          var prefersDark =
+            window.matchMedia &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored === 'dark' || stored === 'light'
+            ? stored
+            : prefersDark
+              ? 'dark'
+              : 'light';
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+          var lang = localStorage.getItem('qadamlab_lang');
+          if (lang === 'uz' || lang === 'ru' || lang === 'en') {
+            document.documentElement.lang = lang;
+          }
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-cloud text-navy dark:bg-navy dark:text-cloud antialiased selection:bg-electric/20 selection:text-navy dark:selection:bg-lime/30 dark:selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

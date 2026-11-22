@@ -1,0 +1,8 @@
+{
+  "name": "QADAM LAB",
+  "description": "QADAM LAB — EdTech portfolio demo for English and IELTS learning in Uzbekistan. Darajangni bil. Yo'lingni qur. Qadamingni kuzat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
